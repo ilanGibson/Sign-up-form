@@ -40,12 +40,18 @@ body {
     grid-column: 3 / 4;
     display: grid;
     grid-template-rows: 350px 300px 1fr;
-    background-color: lightgray;
-    opacity: .2;
+    background-color: rgb(239, 239, 239);
 }
 
 .form_info {
     grid-row: 1 / 2;
+}
+
+.form_info:first-child {
+    margin-top: 150px;
+    margin-left: 40px;
+    color: black;
+
 }
 
 .form {
@@ -53,7 +59,46 @@ body {
     background-color: white;
 }
 
+.form h1 {
+    margin-left: 50px;
+}
+
+.form label {
+    font-size: 10px;
+}
+.form input {
+    font-size: 22px;
+}
+
+div.label_input_container {
+    display: flex;
+}
+
+div.individual_container {
+    display: grid;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 .form_submit {
     grid-row: 3 / 4;
 }
 
+button {
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 40px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: #1f5d1f;
+    color: white;
+    font-size: 14px;
+}
+
+p {
+    margin-left: 50px
+}
+
+a {
+    color: #1f5d1f;
+}
