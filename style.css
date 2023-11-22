@@ -5,7 +5,7 @@ body {
     border: 1px solid black;
     height: 100vh;
     display: grid;
-    grid-template-columns: 250px 550px 1fr;
+    grid-template-columns: 250px 550px 850px 1fr;
 }
 
 .img_container {
@@ -21,18 +21,39 @@ body {
 }
 
 #logo_container {
-    top: 50px;
+    bottom: 50px;
     right: 0px;
     height: 200px;
     width: 550px;
     position: absolute;
     z-index: 2;
     background-color: grey;
-    /* opacity: .7; */
+    opacity: .6;
 }
 
 #logo {
     height: 100%;
     width: 100%;
+}
+
+.form_container {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 350px 300px 1fr;
+    background-color: lightgray;
+    opacity: .2;
+}
+
+.form_info {
+    grid-row: 1 / 2;
+}
+
+.form {
+    grid-row: 2 / 3;
+    background-color: white;
+}
+
+.form_submit {
+    grid-row: 3 / 4;
 }
 
